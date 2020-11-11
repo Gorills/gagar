@@ -13,6 +13,21 @@
 
 @foreach ($news as $new)
 <url>
+    <loc>https://gagarin-digital.ru/</loc>
+    <lastmod>2020-11-11T14:29:28+00:00</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>https://gagarin-digital.ru/news</loc>
+    <lastmod>2020-11-11T14:29:28+00:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://gagarin-digital.ru/shares</loc>
+    <lastmod>2020-11-11T14:29:28+00:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
     <loc>{{ url($new->slug) }}</loc>
     <lastmod>{{ $new->updated_at->tz('GMT')->toAtomString() }}</lastmod>
     <changefreq>monthly</changefreq>
