@@ -58,13 +58,14 @@
     </div>
 
 
-@component('components.share')
+{{-- @component('components.share')
 @slot('link')
     {{ url('/news/'.$new) }}
 @endslot
 
 
-@endcomponent
+@endcomponent --}}
+
 </article>
 
 
