@@ -47,7 +47,7 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin', 'middleware' => ['auth']]
 //Route::get('/works', 'WorksController@index')->name('works');
 
 
-
+Route::get('sitemap.xml', 'BlogController@sitemap');
 
 Auth::routes();
 
