@@ -1,0 +1,85 @@
+.news
+    padding: 40px 0
+    width: 100%
+    margin: 0 auto
+    // .news__inner
+
+    &__inner
+        width: 100%
+        margin: 0 auto
+        text-align: center
+    // .news__row
+
+    &__row
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 40px
+        @media screen and ( max-width:768px  )
+            grid-template-columns: repeat(2, 1fr)
+        @media screen and ( max-width:320px  )
+            grid-template-columns: 1fr
+
+    // .news__item
+
+    &__item
+        text-align: center
+        color: $fonts-dark
+        text-decoration: none
+        position: relative
+       
+        &:hover
+            text-decoration: underline
+            .news__img
+                transform: translate(-50%, -50%) scale(1.1)
+          
+
+    // &__item + &__item
+    //     margin-left: 20px
+    // .news__wrap
+    &__wrap
+        width: 100%
+        overflow: hidden
+        position: relative
+        height: 250px
+
+    // .news__img
+
+    &__img
+        @include img-center
+        transition: $transition
+    // .news__title
+
+    &__title
+        margin-top: 20px
+
+
+    // .news__desc
+
+    &__desc
+        margin-top: 20px
+
+    &__btn-wrap
+        display: flex
+        margin: 0 auto
+        text-align: center
+        justify-content: center
+        @media screen and ( max-width: 480px  )
+            flex-direction: column
+
+    &__btn
+        margin-top: 40px
+    
+    &__btn + &__btn
+        margin-left: 20px
+        @media screen and ( max-width: 480px  )
+            margin-left: 0
+            margin-top: 20px
+
+    &__category
+        position: absolute
+        right: 0
+        top: 10px
+        padding: 5px 15px
+        
+        z-index: 2
+        color: #fff

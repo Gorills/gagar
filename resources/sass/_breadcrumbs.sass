@@ -1,0 +1,82 @@
+
+.breadcrumb
+    width: 100%
+    margin: 0 auto
+    padding: 20px 0
+    height: 60vh
+    display: flex
+    align-items: center
+    position: relative
+    overflow: hidden
+    background-color: #000000
+    // .breadcrumb__inner
+
+    &__inner
+        position: relative
+        z-index: 2
+        margin: 0 auto
+        width: fit-content
+
+    // .breadcrumb__title
+
+    &__title
+        text-align: center
+        font-weight: 700
+        font-size: 48px
+        color: #ffffff
+        text-transform: uppercase
+
+    // .breadcrumb__list
+
+    &__list
+        list-style: none
+        padding-left: 0
+        text-align: center
+
+    // .breadcrumb__item
+
+    &__item
+        display: inline-block
+        position: relative
+
+        &::after
+            position: absolute
+            content: '/'
+            top: 50%
+            right: -15px
+            transform: translateY(-50%)
+
+
+        &:last-child::after
+            content: none
+            
+
+    &__item + &__item
+        margin-left: 20px
+        
+
+    // .breadcrumb__link
+
+    &__link
+        text-decoration: none
+        color: #ffffff
+        font-weight: 700
+        transition: $transition
+        &:hover
+            color: $accent-color
+
+        // .breadcrumb__link--active
+        
+        &--active
+            font-weight: 400
+            cursor: default
+            &:hover
+                color: #ffffff
+
+    // .breadcrumb__img
+
+    &__img
+        @include img-center
+        z-index: 1
+        opacity: 30%
+

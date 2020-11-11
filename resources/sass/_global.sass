@@ -1,0 +1,80 @@
+body
+    margin: 0
+    padding: 0
+    font-size: 15px
+    color: $fonts-dark
+    line-height: 1.6
+    font-family: 'Roboto', sans-serif
+
+
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p
+    margin: 0
+
+button
+    cursor: pointer
+    transition: $transition
+
+
+a
+    transition: $transition
+
+.container
+    width: 100%
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0 15px
+
+.container-fluid
+    width: 100%
+    margin: 0 auto
+
+
+.title
+    padding: 40px 0
+    background-color: $background-light
+    text-align: center
+    position: relative
+    &__title
+        font-size: 56px
+        text-transform: uppercase
+        font-weight: 700
+        color: $fonts-dark
+
+        @media (max-width: 480px)
+            font-size: 36px
+
+
+    &__subtitle
+        color: $fonts-light
+        font-size: 26px
+
+    &__separator
+        clip-path: polygon(50% 100%, 0 0, 100% 0)
+        background: $background-light
+        z-index: 2
+        width: 40px
+        height: 20px
+        position: absolute
+        bottom: -15px
+        left: 50%
+        transform: translateX(-50%)
+
+
+.btn
+    text-decoration: none
+    outline: none
+    display: inline-block
+    padding: 10px 35px
+    border-radius: 35px
+    color: #ffffff
+    font-weight: 700
+    @include gradient
+    box-shadow: $box-shadow
+    transition: $transition
+    &:hover, &:focus
+        @include gradient-revers

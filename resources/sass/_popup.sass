@@ -1,0 +1,53 @@
+.popup
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 20px
+    z-index: 3
+    background: #ffffff
+    width: 100%
+    max-width: 400px
+    display: none
+    &__form
+        display: flex
+        flex-direction: column
+
+    &__title
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 20px
+        border-radius: 0
+    &__input
+        padding: 10px 5px
+        resize: none
+        border: 1px solid $accent-color
+        outline: none
+        &:hover, &:focus
+            outline: 1px solid #720d19
+    &__input + &__input
+        margin-top: 15px
+    &__btn
+        display: inline-block
+        margin: 40px auto 0
+        text-decoration: none
+        outline: none
+        padding: 10px 40px
+        border-radius: 35px
+        color: #ffffff
+        font-weight: 700
+        @include gradient
+        box-shadow: $box-shadow
+        transition: $transition
+        &:hover, &:focus
+            @include gradient-revers
+
+    &__closer
+        background-color: rgba(102, 102, 102, 0.5)
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 2
+        display: none

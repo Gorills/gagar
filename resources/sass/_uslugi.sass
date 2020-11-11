@@ -1,0 +1,170 @@
+.uslugi
+    width: 100%
+    margin: 0 auto
+    padding: 40px 0
+    // .uslugi__inner
+
+    &__inner
+        width: 100%
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        @media (max-width: 768px)
+            flex-direction: column
+    // .uslugi__left
+
+    &__left
+
+    // .uslugi__title
+
+    &__title
+        font-size: 34px
+        font-weight: 700
+        margin-bottom: 20px
+
+        line-height: 1
+    // .uslugi__subtitle
+
+    &__subtitle
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 20px
+        color: $fonts-light
+    // .uslugi__text
+
+    &__text-left
+        margin-bottom: 50px
+    // .uslugi__row
+
+    &__row
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 50px
+        @media (max-width: 480px)
+            grid-template-columns: 1fr
+
+    // .uslugi__item
+
+    &__item
+        display: flex
+        @media (max-width: 480px)
+            width: 100%
+            max-width: 350px
+            margin: 0 auto
+        i
+            font-size: 40px
+            color: $accent-color
+
+    // .uslugi__wrap
+
+    &__wrap
+        margin-left: 15px
+    // .uslugi__item-title
+
+    &__item-title
+        font-weight: 700
+        font-size: 18px
+        margin-bottom: 15px
+    // .uslugi__item-description
+
+    &__item-description
+
+
+    &__btn-wrapper
+        width: 100%
+        text-align: center
+        margin-top: 40px
+
+
+    // .uslugi__right
+
+    &__right
+        margin-left: 20px
+        @media (max-width: 768px)
+            margin-left: 0
+            margin-top: 40px
+    // .uslugi__card
+
+    &__card
+        margin: 0 auto
+        width: 350px
+        height: 350px
+        position: relative
+        perspective: 1000px
+        &:hover .uslugi__front
+            transform: rotateY(180deg)
+            cursor: pointer
+        &:hover .uslugi__back
+            transform: rotateY(360deg)
+            cursor: pointer
+
+    &__card + &__card
+        margin-top: 20px
+
+    // .review__front
+
+    &__front, &__back
+        color: #ffffff
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: $transition
+        backface-visibility: hidden
+        flex-direction: column
+        text-align: start
+        z-index: 3
+    &__front
+        background-color: rgba(51,51,51,.5)
+        padding: 25px 25px
+    // .review__back
+
+    &__back
+        padding: 20px
+        overflow: hidden
+        transform: rotateY(180deg)
+        background-color: rgba(51,51,51,1)
+    // .review__card-wrapper
+
+    &__card-wrapper
+        margin-bottom: 20px
+        padding-left: 50px
+        text-align: center
+        position: relative
+        width: 100%
+        display: block
+        &::before
+            position: absolute
+            left: 0
+            top: 0
+            content: '\201C'
+            font-size: 70px
+            line-height: 1
+            color: $accent-color
+    // .review__card-title
+
+    &__card-title
+
+        display: block
+        font-size: 36px
+        text-align: center
+    // .review__text
+
+    &__text
+        text-align: center
+        display: block
+
+
+
+
+    // .uslugi__img
+
+    &__img
+        @include img-center
+        z-index: 2
+
+
