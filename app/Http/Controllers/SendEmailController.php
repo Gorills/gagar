@@ -28,7 +28,7 @@ class SendEmailController extends Controller
             'page'      => $request->type
         );
 
-        Mail::to('ferrum_art@mail.ru')->send(new SendMail($data));
+        Mail::to('gorivanickiy@gmail.com')->send(new SendMail($data));
         return view('thank-you');
 
 
