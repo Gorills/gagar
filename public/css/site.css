@@ -1489,3 +1489,21 @@ a {
   background: url(/images/share-btns.png?59bbfeeb8e6a10fb393e9de22fa3d684) no-repeat -672px top;
 }
 
+.error {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.error__inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.error__title {
+  font-size: 36px;
+}
+
