@@ -3,7 +3,8 @@
     width: 100%
     margin: 0 auto
     padding: 20px 0
-    height: 60vh
+    height: 70vh
+    min-height: 500px
     display: flex
     align-items: center
     position: relative
@@ -25,6 +26,11 @@
         font-size: 48px
         color: #ffffff
         text-transform: uppercase
+        @media screen and ( max-width: 576px )
+            font-size: 32px
+        @media screen and ( max-width: 576px )
+            font-size: 26px
+            
 
     // .breadcrumb__list
 
@@ -38,7 +44,7 @@
     &__item
         display: inline-block
         position: relative
-
+        margin-right: 20px
         &::after
             position: absolute
             content: '/'
@@ -51,8 +57,9 @@
             content: none
             
 
-    &__item + &__item
-        margin-left: 20px
+    &__item:last-child
+        margin-right: 0
+        
         
 
     // .breadcrumb__link
