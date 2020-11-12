@@ -1242,6 +1242,7 @@ a {
 }
 
 .news__item {
+  background-color: #f8f8f9;
   text-align: center;
   color: #3b3f4a;
   text-decoration: none;
@@ -1278,10 +1279,13 @@ a {
 .news__title {
   margin-top: 20px;
   transition: all 0.5s ease;
+  padding: 0 15px;
+  font-size: 26px;
 }
 
 .news__desc {
   margin-top: 20px;
+  padding: 0 15px 15px;
 }
 
 .news__time {
