@@ -50,8 +50,8 @@ $(".menu-btn").click(function(e) {
 
 })
 
-$(".header__link").click(function(e) {
-    e.preventDefault();
+$(".header__link").click(function() {
+  
     $(".menu-btn").removeClass('menu-btn_active');
     $(".header").removeClass('header--active');
 

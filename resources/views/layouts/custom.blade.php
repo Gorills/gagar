@@ -101,7 +101,7 @@
 
 
 
-<script src="{{ URL::asset('js/site.js?').('v.1.0.1') }} "></script>
+<script src="{{ URL::asset('js/site.js?').('v.1.0.2') }} "></script>
 
 
 </body>

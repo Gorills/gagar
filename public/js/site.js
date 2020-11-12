@@ -11054,8 +11054,7 @@ $(".menu-btn").click(function (e) {
   $(this).toggleClass('menu-btn_active');
   $(".header").toggleClass('header--active');
 });
-$(".header__link").click(function (e) {
-  e.preventDefault();
+$(".header__link").click(function () {
   $(".menu-btn").removeClass('menu-btn_active');
   $(".header").removeClass('header--active');
 });
