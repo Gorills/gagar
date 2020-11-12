@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="{{ URL::asset('css/site.css?').('v.1.0.0') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/site.css?').('v.1.0.1') }}">
     <script src="https://kit.fontawesome.com/0af96d350a.js" crossorigin="anonymous"></script>
     <title>@yield('title')</title>
     <meta name="description" content="@yield('description')"/>
@@ -100,8 +100,8 @@
 
 
 
-<style src="{{ URL::asset('js/app.js') }}"></style>
-<script src="{{ URL::asset('js/site.js') }} "></script>
+
+<script src="{{ URL::asset('js/site.js?').('v.1.0.1') }} "></script>
 
 
 </body>

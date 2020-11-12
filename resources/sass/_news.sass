@@ -28,7 +28,9 @@
         position: relative
        
         &:hover
-            text-decoration: underline
+            .news__title
+                color: $accent-color
+
             .news__img
                 transform: translate(-50%, -50%) scale(1.1)
           
@@ -51,12 +53,18 @@
 
     &__title
         margin-top: 20px
-
+        transition: $transition
 
     // .news__desc
 
     &__desc
         margin-top: 20px
+    // news__time
+
+    &__time
+        margin-top: 20px
+        color: $fonts-light
+
 
     &__btn-wrap
         display: flex
@@ -83,3 +91,4 @@
         
         z-index: 2
         color: #fff
+    

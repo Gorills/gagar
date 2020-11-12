@@ -58,6 +58,9 @@
                     
                     <h3 class="news__title">{{ $new->title }}</h3>
                     <p class="news__desc">{{ $new->description }}</p>
+                    <p class="news__time">{{ $new->created_at->format('Y-m-d') }}</p>
+                    
+
                 </a>
             @endforeach
                    

@@ -10,8 +10,6 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 
-
-@foreach ($news as $new)
 <url>
     <loc>https://gagarin-digital.ru/</loc>
     <lastmod>2020-11-11T14:29:28+00:00</lastmod>
@@ -27,6 +25,8 @@
     <lastmod>2020-11-11T14:29:28+00:00</lastmod>
     <priority>0.80</priority>
 </url>
+@foreach ($news as $new)
+
 <url>
     <loc>{{ url($new->slug) }}</loc>
     <lastmod>{{ $new->updated_at->tz('GMT')->toAtomString() }}</lastmod>

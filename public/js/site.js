@@ -11054,6 +11054,11 @@ $(".menu-btn").click(function (e) {
   $(this).toggleClass('menu-btn_active');
   $(".header").toggleClass('header--active');
 });
+$(".header__link").click(function (e) {
+  e.preventDefault();
+  $(".menu-btn").removeClass('menu-btn_active');
+  $(".header").removeClass('header--active');
+});
 $('.show__popup').click(function (e) {
   e.preventDefault();
   $('.popup').show();

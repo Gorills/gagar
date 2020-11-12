@@ -50,6 +50,13 @@ $(".menu-btn").click(function(e) {
 
 })
 
+$(".header__link").click(function(e) {
+    e.preventDefault();
+    $(".menu-btn").removeClass('menu-btn_active');
+    $(".header").removeClass('header--active');
+
+})
+
 
 $('.show__popup').click(function (e){
     e.preventDefault();
