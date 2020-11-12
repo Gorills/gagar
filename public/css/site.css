@@ -1247,6 +1247,7 @@ a {
   color: #3b3f4a;
   text-decoration: none;
   position: relative;
+  border: 1px solid #97959560;
 }
 
 .news__item:hover .news__title {
