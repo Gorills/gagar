@@ -24,8 +24,8 @@
 </div>
 
 <div class="form-group">
-    <label>Цвет</label>
-    <input name="color" type="text" class="form-control" value="{{ $stock->color ?? "" }}" placeholder="Цвет" required>
+    <label>Цвет #cb1023</label>
+    <input name="color" type="text" class="form-control" value="{{ $stock->color ?? "" }}" placeholder="#cb1023" required>
 </div>
 
 
